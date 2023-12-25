@@ -1,0 +1,154 @@
+/** About me Part **/
+#aboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 48px);
+
+  background: url(../image/picture/background/protruding-squares.svg);
+}
+#aboutMe__container {
+  width: 60%;
+  z-index: 10;
+  background-image: radial-gradient(circle, black 5%, transparent 10%),
+    radial-gradient(circle, black 5%, transparent 10%);
+  background-size: 15px 15px;
+}
+
+#aboutMe__container__contentFirst {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+}
+#aboutMe__container__contentFirst div {
+  display: flex;
+  align-items: center;
+}
+
+#aboutMe__container__contentFirst div span {
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3em;
+}
+
+#aboutMe__container__contentSecond {
+  border-left: 1px solid rgb(255, 123, 0);
+
+  margin-left: 1em;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+#aboutMe__container__contentThird {
+  padding: 10px;
+}
+
+#aboutMe__container__contentThird span {
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+#aboutMe__container__contentFourth {
+  border-left: 1px solid rgb(255, 123, 0);
+  margin: 10px;
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+#aboutMe__container__contentFifth {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  user-select: none;
+}
+
+#aboutMe__container__contentFifth__container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  padding-left: 1em;
+  row-gap: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#aboutMe__container__contentFifth__container div {
+  width: 200px;
+  height: 60px;
+  display: flex;
+}
+
+#aboutMe__container__contentFifth__container div div {
+  width: 30%;
+  aspect-ratio: 1/1;
+}
+#aboutMe__container__contentFifth__container div div img {
+  width: 100%;
+}
+#aboutMe__container__contentFifth__container div p {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/** About me Part End **/
+@media screen and (max-width: 375px) {
+  #container {
+  }
+  #aboutMe {
+    height: 100%;
+    padding: 30% 0 10% 0;
+  }
+  #aboutMe__container {
+    width: 90%;
+  }
+  #aboutMe__container__contentFirst {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    padding: 10px;
+  }
+  #aboutMe__container__contentFirst div span {
+    font-size: 2.75em;
+  }
+
+  #aboutMe__container__contentSecond {
+    border-left: 1px solid rgb(255, 123, 0);
+
+    margin-left: 0.5em;
+    padding: 5px;
+    font-size: 1.25em;
+  }
+
+  #aboutMe__container__contentThird {
+    padding: 5px;
+  }
+
+  #aboutMe__container__contentThird span {
+    font-size: 1.25em;
+  }
+
+  #aboutMe__container__contentFifth__container {
+    column-gap: 10px;
+    padding-left: 1em;
+    row-gap: 10px;
+  }
+
+  #aboutMe__container__contentFifth__container div {
+    width: 150px;
+    height: 45px;
+  }
+
+  #aboutMe__container__contentFifth__container div p {
+    padding: 5px;
+    font-size: 0.75em;
+  }
+}

@@ -1,0 +1,187 @@
+/**  Contact Part **/
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 48px);
+  background: url(../image/picture/background/protruding-squares.svg);
+}
+#contact__container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  z-index: 10;
+  background-image: radial-gradient(circle, rgb(22, 20, 20) 5%, transparent 10%),
+    radial-gradient(circle, rgb(22, 20, 20) 5%, transparent 10%);
+  background-size: 15px 15px;
+}
+
+#contact__container__contentFirst {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#contact__container__contentFirst div {
+  display: flex;
+  align-items: center;
+}
+#contact__container__contentFirst div:first-child {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#contact__container__contentFirst div span {
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3em;
+}
+
+#contact__container__contentFirst div p {
+  font-weight: 300;
+  font-size: 1em;
+  padding-left: 0.9em;
+}
+
+#contact__container__contentFirst div p span {
+  font-size: 0.4em;
+  color: grey;
+}
+
+#contact__container__contentFirst div .a__button {
+  font-size: 1.5em;
+}
+
+#contact__container__contentSecond > div {
+  padding: 0.5em;
+  font-size: 1.25em;
+}
+#contact__container__contentSecond > div > h3 {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+#contact__container__contentSecond div i {
+  padding-right: 1em;
+}
+
+#contact__container__contentSecond div span {
+  font-weight: 400;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.slider {
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  user-select: none;
+  cursor: pointer;
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slideTrack {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slide {
+  height: 100px;
+  width: 250px;
+  background-color: #f1efe3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  height: calc(100px - 30%);
+  width: calc(250px - 20%);
+  background-color: #f1efe3;
+  object-fit: contain;
+}
+/**  End Contact Part **/
+
+@media screen and (max-width: 375px) {
+  #contact {
+    height: calc(100vh - 48px);
+    padding: 30% 0 10% 0;
+  }
+  #contact__container {
+    width: 90%;
+    gap: 25px;
+  }
+
+  #contact__container__contentFirst {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  #contact__container__contentFirst div {
+    display: flex;
+    align-items: center;
+  }
+  #contact__container__contentFirst div:first-child {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact__container__contentFirst div span {
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2.5em;
+  }
+
+  #contact__container__contentFirst div p {
+    font-weight: 300;
+    font-size: 1em;
+    padding-left: 0;
+  }
+
+  #contact__container {
+    gap: 10x;
+  }
+
+  #contact__container__contentSecond > div {
+    padding: 0.25em;
+  }
+}
