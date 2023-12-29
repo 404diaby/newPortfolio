@@ -71,6 +71,12 @@
   font-weight: 400;
 }
 
+
+#contact__container__contentSecond div a {
+  text-decoration: none;
+  color: #f1efe3;
+}
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -194,23 +200,13 @@
     }
   }
   
-@media screen and (max-width: 375px) {
-  #contact {
-     padding: 10% 0 5% 0;
-   }
-   #contact__container {
-     gap: 10px;
-   }
  
- }
- 
+   
+  @media only screen and (max-width: 375px) {
+    #contact__container {
+      padding-top: 20%;
+    }
   
-@media screen and (min-width: 375px) {
-  #contact {
-     padding: 70px 0 10px 0;
-   }
-   #contact__container {
-     gap: 10px;
-   }
- 
- }
+    
+  }
+  
