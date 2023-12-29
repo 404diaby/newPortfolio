@@ -205,3 +205,12 @@
  }
  
   
+@media screen and (min-width: 375px) {
+  #contact {
+     padding: 30% 0 10% 0;
+   }
+   #contact__container {
+     gap: 10px;
+   }
+ 
+ }
