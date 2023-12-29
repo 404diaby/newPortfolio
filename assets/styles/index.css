@@ -78,6 +78,14 @@
   }
 }
 */
+
+/*
+  Média query
+  max-width: 992 = laptop
+  max-width: 768 = tablette
+  max-width: 600 = mobile
+
+  */
 @media only screen and (max-width: 992px) {
   #home__container {
     width: 90%;
