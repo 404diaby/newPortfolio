@@ -3,10 +3,10 @@ nav {
   color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
-  position: fixed;
+  /*position: fixed;*/
   width: 100%;
   z-index: 1030;
-  top: 0;
+ /* top: 0;*/
 }
 
 #nav {
