@@ -1,12 +1,13 @@
 nav {
-  background: #212f77;
+  background: #1e3266;
   color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   /*position: fixed;*/
   width: 100%;
-  z-index: 1030;
+ /* z-index: 1030;*/
  /* top: 0;*/
+ font-family: "montserrat","monospace",sans-serif;
 }
 
 #nav {
@@ -27,25 +28,24 @@ nav {
   text-decoration: none;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
-  font-size: 1.25em;
+  font-size: 1em;
   transition: 0.2s ease;
 }
 
 #nav__mainMenu li a:hover {
-  background: #5162bb;
   color: rgb(255, 123, 0);
 }
 
 #nav__openMenu {
-  font-size: 1.5rem;
-  margin: 10px;
+  font-size: 1rem;
+  margin: 5px;
   display: none;
   cursor: pointer;
 }
 
 #nav__mainMenu__closeMenu,
 .nav__mainMenu__icons__link {
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: none;
   cursor: pointer;
 }
@@ -76,49 +76,49 @@ nav {
 }
 
 @media screen and (max-width: 800px) {
-  #nav__mainMenu {
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 10;
-    flex-direction: column;
+    #nav__mainMenu {
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 10;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #1e3266;
+      opacity: 0.8;
+      transition: top 1s ease;
+      display: none;
+    }
+
+    #nav__mainMenu__closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    #nav #nav__openMenu {
+      display: block;
+    }
+  /*
+    #nav #nav__mainMenu li a:hover {
+      font-size: 1.6em;
+    }*/
+    #nav__mainMenu__icons {
+      padding-top: 2em;
+    }
+    .nav__mainMenu__icons__link {
+      display: inline-block;
+      padding: 12px;
+    }
+    
+  #nav__logo {
+    margin: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 25px;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    background: #1e3266;
-    opacity: 0.8;
-    transition: top 1s ease;
-    display: none;
   }
-
-  #nav__mainMenu__closeMenu {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-  #nav #nav__openMenu {
-    display: block;
-  }
-
-  #nav #nav__mainMenu li a:hover {
-    font-size: 1.6em;
-  }
-  #nav__mainMenu__icons {
-    padding-top: 2em;
-  }
-  .nav__mainMenu__icons__link {
-    display: inline-block;
-    padding: 12px;
-  }
-  
-#nav__logo {
-  margin: 3px;
-  cursor: pointer;
-  text-transform: uppercase;
-  width: 30px;
-  display: flex;
-  align-items: center;
-}
 }

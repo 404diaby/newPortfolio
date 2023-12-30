@@ -1,0 +1,207 @@
+
+#work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+#work__container {
+    width:60% ;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    background-image: radial-gradient(circle, rgb(22, 20, 20) 5%, transparent 10%),
+      radial-gradient(circle, rgb(22, 20, 20) 5%, transparent 10%);
+    background-size: 15px 15px;
+    
+  }
+  
+  #work__container__contentFirst {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  #work__container__contentFirst div {
+    display: flex;
+    align-items: center;
+  }
+  
+  #work__container__contentFirst div:first-child {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  #work__container__contentFirst div span {
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 3em;letter-spacing: 4px;
+  }
+  
+  #work__container__contentFirst div p {
+    letter-spacing: 4px;
+    font-size: 1em;
+    padding-left: 0.9em;
+  }
+
+ 
+#work__container__contentSecond{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+   
+}
+
+
+
+#work__container__contentSecond  section{
+
+    width: 100%;
+    margin: auto;
+   /* background-color: #1e3266;*/
+  color: #f1efe3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  font-family: "montserrat", sans-serif;
+  display:inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+    padding: 10px;
+  }
+
+  #work__container__contentSecond  section  article{
+    max-width: 50%;
+    padding: 1em;
+    display: inline-flex;
+  }
+  
+  #work__container__contentSecond  section  article:hover {
+    transform: scale(1.05);
+  border-left: 1px solid rgb(255, 123, 0);
+}
+#work__container__contentSecond  section  article main{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+  }
+  #work__container__contentSecond  section  article main span:first-child{
+    font-size: 1.5em;
+  }
+  #work__container__contentSecond  section  article main span:last-child{
+    font-size: .7em;
+  }
+  #work__container__contentSecond  section  article aside{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    font-size: 1.25em;
+  }
+  
+  #work__container__contentSecond  section article aside a {
+     color: rgb(255, 123, 0);
+    text-decoration: none;
+    /*transition: background-color 0.3s ease-in-out;*/
+  }
+  
+  #work__container__contentSecond  section article aside a:hover {
+   color: #f1efe3;
+  }
+  
+/*
+  Média query
+  max-width: 992 = laptop
+  max-width: 768 = tablette
+  max-width: 600 = mobile
+
+  */
+  
+@media only screen and (max-width: 992px) {
+   
+  }
+  
+  @media only screen and (max-width: 768px) {
+   
+    #work__container {
+        width: 90%;
+        
+      }
+    
+      #work__container__contentFirst {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+          text-align: center;
+          gap: .5em;
+        }
+      
+        #work__container__contentFirst div span {
+          width: 100%;
+        }
+        
+  #work__container__contentFirst {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  #work__container__contentFirst div {
+    display: flex;
+    align-items: center;
+  }
+  
+  #work__container__contentFirst div:first-child {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  #work__container__contentFirst div span {
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 3em;letter-spacing: 4px;
+  }
+  
+  #work__container__contentFirst div p {
+    letter-spacing: 4px;
+    font-size: 1em;
+    padding-left: 0.9em;
+  }
+
+  
+
+
+      
+#work__container__contentSecond{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+   
+}
+
+
+
+#work__container__contentSecond  section{
+
+   
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  
+  }
+ 
+
+  
+  
+}
+  
+  @media only screen and (max-width: 600px) {
+   
+
+     
+    
+  }
+  

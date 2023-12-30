@@ -1,13 +1,15 @@
+
 /** Home Part **/
+
 
 /* coloor F1EFE3 */
 #home {
-  background: url("../image/picture/background/Cloudy.svg") no-repeat center center/ cover;
+ 
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 48px);
 }
+
 
 #home__container {
   background-image: radial-gradient(circle, rgb(22, 20, 20) 5%, transparent 10%),
