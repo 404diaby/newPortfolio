@@ -316,6 +316,10 @@ nav{
   flex-direction: column;
 }
 
+#aboutMe__container__contentSixth > div {
+  font-size: inherit;
+}
+
 }
 
 /** a modifier **/

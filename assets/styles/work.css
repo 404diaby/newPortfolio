@@ -75,6 +75,7 @@
     max-width: 50%;
     padding: 1em;
     display: inline-flex;
+    margin: 10px;
   }
   
   #work__container__contentSecond  section  article:hover {
@@ -139,6 +140,7 @@
       
         #work__container__contentFirst div span {
           width: 100%;
+         
         }
         
   #work__container__contentFirst {
@@ -189,7 +191,7 @@
    
   display:flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   
   }
  
@@ -200,8 +202,18 @@
   
   @media only screen and (max-width: 600px) {
    
-
+    #work__container__contentFirst div span {
+      font-size: 2em;
      
+    }
+    #work__container__contentSecond  section  article:nth-child(odd) {
+     
+    border-left: 1px solid rgb(255, 123, 0);
+  }
+  #work__container__contentSecond  section  article:nth-child(even) {
+     
+    border-left: 1px solid #f1efe3;
+  }
     
   }
   

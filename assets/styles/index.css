@@ -137,6 +137,7 @@
 
   #home__container .mobile {
     display: flex;
+    text-align: center;
   }
   #home__container .mobile .point {
     display: flex;
