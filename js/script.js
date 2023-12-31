@@ -54,7 +54,11 @@ const observer = new IntersectionObserver((entries) => {
         },800)
       }
       if(entry.target.id == "aboutMe__container__contentSixth"){
-        entry.target.classList.add("tracking-in-expand-fwd-top");
+        entry.target.classList.add("tracking-in-expand-fwd-bottom");
+        
+        setTimeout(() =>{
+          console.log(entry.target.children[0].children[0].classList.add("shake-horizontal"));
+        },800)
       }
       
       

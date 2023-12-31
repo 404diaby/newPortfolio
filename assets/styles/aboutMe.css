@@ -126,41 +126,6 @@ nav{
   padding-left: 0.9em;
 }
 
-/*
-#aboutMe__container__contentSixth{
-  display: inline-flex;
-  width: 100%;
-  justify-content: space-evenly;
-}
-#aboutMe__container__contentSixth > div {
-  padding: 0.5em;
-  font-size: 1.25em;
-}
-
-#aboutMe__container__contentSixth > div:hover i {
-  color:rgb(255, 123, 0);
-}
-
-#aboutMe__container__contentSixth > div > h3 {
-  font-weight: 700;
-  font-size: 1.5em;
-}
-
-#aboutMe__container__contentSixth div i {
-  padding-right: 1em;
-}
-
-#aboutMe__container__contentSixth div span {
-  font-weight: 400;
-}
-
-
-#aboutMe__container__contentSixth div a {
-  text-decoration: none;
-  color: #f1efe3;
-}
-*/
-
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -228,6 +193,9 @@ nav{
   background-color: #f1efe3;
   object-fit: contain;
 }
+
+
+
 
 /** About me Part End **/
 
