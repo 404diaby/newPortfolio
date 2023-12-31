@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="./assets/styles/nav.css" />
     <link rel="stylesheet" href="./assets/styles/index.css" />
     <link rel="stylesheet" href="./assets/styles/work.css" />
-    
     <link rel="stylesheet" href="./assets/styles/aboutMe.css" />
     <link rel="stylesheet" href="./assets/styles/generic.css" />
   </head>
@@ -57,7 +56,7 @@
     <!-------------------- End loading part ------------------------>
     <div id="container">
       <nav>
-        <div id="nav">
+        <div id="nav" class="hidden">
           <div id="nav__logo">
             <img src="./assets/image/picture/websiteLogo/logo.png" alt="websiteLogo" />
           </div>
@@ -76,7 +75,7 @@
         </div>
       </nav>
       <!-------------------- Overlay Lateral part ------------------------>
-      <div id="overlayLateralFollow">
+      <div id="overlayLateralFollow" class="hidden">
         <ul>
           <li>
             <a href="https://github.com/404diaby" target="_blank"><i class="fa-brands fa-square-github fa-lg"></i></a>
@@ -94,9 +93,9 @@
       <!-------------------- End overlay part ------------------------>
       <!-------------------- Home part ------------------------>
       <section id="home">
-        <div id="home__container">
-          <span>Web Developer</span>
-          <ul class="desktop">
+        <div id="home__container" class="hidden" >
+          <span id="home__container__title" >Web Developer</span>
+          <ul  id="home__container__caption" class="desktop">
             <li>Front-end Developer</li>
             <li class="point"></li>
             <li>Software Developer</li>
@@ -107,12 +106,12 @@
             
             <span>Software Developer </span>
           </p>
-          <a class="link" href="#aboutMe">about me</a>
+          <a id="home__container__link" class="link" href="#aboutMe">about me</a>
         </div>
       </section>
       <section id="work">
         <div id="work__container">
-            <div id="work__container__contentFirst">
+            <div id="work__container__contentFirst" class="hidden" >
                 <div>
                     <span>work</span>
                     <!--<p> that shows the diversity of my skills</p>!-->
@@ -124,9 +123,9 @@
                 </div>    
                 
             </div>
-            <div id="work__container__contentSecond">
-                <section>
-                    <article>
+            <div id="work__container__contentSecond" >
+                <section id="work__container__contentSecond__row" >
+                    <article id="work__container__contentSecond__row__item" class="hidden hiddenSpe">
                         <main>
                             <span>FAQ ACCORDION</span>
                             <span>html - css - javascript</span>   
@@ -137,7 +136,7 @@
                         </aside>
                         
                     </article>
-                    <article>
+                    <article id="work__container__contentSecond__row__item" class="hidden hiddenSpe">
                         <main>
                             <span>FAQ ACCORDION</span>
                             <span>html - css - javascript</span>   
@@ -148,7 +147,7 @@
                         </aside>
                         
                     </article>
-                    <article>
+                    <article id="work__container__contentSecond__row__item" class="hidden hiddenSpe">
                         <main>
                             <span>FAQ ACCORDION</span>
                             <span>html - css - javascript</span>   
@@ -159,8 +158,8 @@
                         </aside>
                     </article>
                 </section>
-                <section>
-                    <article>
+                <section id="work__container__contentSecond__row" >
+                    <article id="work__container__contentSecond__row__item" class="hidden hiddenSpe">
                         <main>
                             <span>FAQ ACCORDION</span>
                             <span>html - css - javascript</span>   
@@ -171,7 +170,7 @@
                         </aside>
                         
                     </article>
-                    <article>
+                    <article id="work__container__contentSecond__row__item" class="hidden hiddenSpe">
                         <main>
                             <span>FAQ ACCORDION</span>
                             <span>html - css - javascript</span>   
@@ -181,7 +180,7 @@
                             <a href="https://github.com/404diaby"><i class="fa-brands fa-square-github"></i></a>
                         </aside>
                     </article>
-                    <article>
+                    <article id="work__container__contentSecond__row__item" class="hidden hiddenSpe">
 
                         <main>
                             <span>FAQ ACCORDION</span>
@@ -202,7 +201,7 @@
         </section>
       <section id="aboutMe">
         <div id="aboutMe__container">
-          <div id="aboutMe__container__contentFirst">
+          <div id="aboutMe__container__contentFirst" class="hidden hiddenSpe">
             <div>
               <span>about me</span>
             </div>
@@ -210,7 +209,7 @@
               <a class="link" href="../assets/image/pdf/resume/DIABY_Mamadou_CV.pdf" target="_blank">resume</a>
             </div>
           </div>
-          <div id="aboutMe__container__contentSecond">
+          <div id="aboutMe__container__contentSecond" class="hidden hiddenSpe">
             <p
               >Hi! I'm Mamadou, Holder of a BTS Computer Services to
               Organizations option: Software Solutions and Business Applications
@@ -226,65 +225,69 @@
               matter.
             </p>
           </div>
-          <div id="aboutMe__container__contentThird">
-            <span>Techs and Tools</span>
+          <div id="aboutMe__container__contentThird" class="hidden">
+            <span id="aboutMe__container__contentThird__title" >Techs and Tools</span>
           </div>
           <!--<div id="aboutMe__container__contentFourth">
                     <p>Using a combination of cutting-edge technologies and reliable open-source software I build user-focused, performant apps and websites for smartphones, tablets, and desktops.</p>
                 </div>-->
           <div id="aboutMe__container__contentFourth ">
             <div id="aboutMe__container__contentFourth__container">
-              <div>
+              <div id="aboutMe__container__contentFourth__container__item" class="hidden hiddenSpe">
                 <div><img src="../assets/image/picture/toolsLogo/html.png" alt="toolsLogo__html"/></div>
                 <p> HTML</p>
               </div>
-              <div>
+              <div  id="aboutMe__container__contentFourth__container__item" class="hidden hiddenSpe">
                 <div><img src="../assets/image/picture/toolsLogo/css.png" alt="toolsLogo__css"/></div>
                 <p> CSS</p>
               </div>
-              <div>
+              <div  id="aboutMe__container__contentFourth__container__item" class="hidden hiddenSpe">
                 <div><img src="../assets/image/picture/toolsLogo/c-sharp.png" alt="toolsLogo__c-sharp"/></div>
                 <p> C#</p>
               </div>
-              <div>
+              <div  id="aboutMe__container__contentFourth__container__item" class="hidden hiddenSpe">
                 <div><img src="../assets/image/picture/toolsLogo/java.png" alt="toolsLogo__java" /></div>
                 <p> JAVA</p>
               </div>
-              <div>
+              <div  id="aboutMe__container__contentFourth__container__item" class="hidden hiddenSpe">
                 <div><img src="../assets/image/picture/toolsLogo/php.png" alt="toolsLogo__php" /></div>
                 <p> PHP</p>
               </div>
-              <div>
+              <div  id="aboutMe__container__contentFourth__container__item" class="hidden hiddenSpe">
                 <div><img src="../assets/image/picture/toolsLogo/javascript.png"alt="toolsLogo__javascript" /></div>
                 <p>JAVASCRIPT </p>
               </div>
-              <div>
+              <div id="aboutMe__container__contentFourth__container__item" class="hidden hiddenSpe">
                 <div><img src="../assets/image/picture/toolsLogo/mysql.png" alt="toolsLogo__mysql" /></div>
                 <p>MYSQL </p>
               </div>
-              <div>
+              <div  id="aboutMe__container__contentFourth__container__item" class="hidden hiddenSpe">
                 <div><img src="../assets/image/picture/toolsLogo/git.png" alt="toolsLogo__git" /></div>
                 <p>git </p>
               </div>
             </div>
           </div>
-          <div id="aboutMe__container__contentFifth">
+          <div id="aboutMe__container__contentFifth" class="hidden">
             <div>
-              <span>contact me</span>
+              <span>join me</span>
             </div>
+            <!--
             <div>
               <a class="link" href="https://linktr.ee/404diaby" target="_blank">links</a>        
             </div>
+          -->
           </div>
+          <!-- 
           <div id="aboutMe__container__contentSixth">
-            <div><!--dev.mdiaby@gmail.com   dev.contact@diaby-mamadou.com-->
+            <div>dev.mdiaby@gmail.com   dev.contact@diaby-mamadou.com
               <i class="fa-solid fa-envelope"></i><span>diabymamadou3001@gmail.com</span>
             </div>
             <div>
               <i class="fa-solid fa-location-dot"></i><span>Paris, French</span>
             </div>
-          </div>
-          <div id="">
+          </div>-->
+          <div id="aboutMe__container__contentSixth" class="hidden" >
+            <a class="link" href="https://linktr.ee/404diaby" target="_blank">
             <div class="slider">
                 <div class="slideTrack"><!--
                       <div class="slide">
@@ -322,6 +325,7 @@
                   </div>
                 </div>
               </div>
+              </a>
           </div> 
         </div>
       </section>  

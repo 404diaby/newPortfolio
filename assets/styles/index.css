@@ -1,10 +1,7 @@
 
 /** Home Part **/
 
-
-/* coloor F1EFE3 */
 #home {
- 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,16 +67,7 @@
 }
 
 /** Home Part End **/
-/*
-@media screen and (max-width: 800px) {
-  #home__container #home__container__content span {
-    line-height: 1;
-    font-weight: 800;
-    font-family: "Cabinet Grotesk", sans-serif;
-    font-size: 4.5em;
-  }
-}
-*/
+
 
 /*
   Média query
@@ -91,8 +79,6 @@
 @media only screen and (max-width: 992px) {
   #home__container {
     width: 90%;
-   
-    /*padding: 30% 0 10% 0;*/
     gap: 2.5em;
   }
 
@@ -119,7 +105,6 @@
 @media only screen and (max-width: 600px) {
   #home__container {
     width: 90%;
-    /*padding: 30% 0 10% 0;*/
     gap: 2.5em;
   }
 

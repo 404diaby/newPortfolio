@@ -13,7 +13,6 @@ nav{
 }
 #aboutMe__container {
   width: 60%;
-  z-index: ;
   background-image: radial-gradient(circle, black 5%, transparent 10%),
     radial-gradient(circle, black 5%, transparent 10%);
   background-size: 15px 15px;
@@ -100,6 +99,13 @@ nav{
   align-items: center;
 }
 
+#aboutMe__container__contentFourth__container__item:nth-child(odd){
+  transition-delay: 400ms;
+}
+#aboutMe__container__contentFourth__container__item:nth-child(even){
+  transition-delay: 800ms;
+}
+
 #aboutMe__container__contentFifth {
   display: inline-flex;
   width: 100%;
@@ -120,7 +126,7 @@ nav{
   padding-left: 0.9em;
 }
 
-
+/*
 #aboutMe__container__contentSixth{
   display: inline-flex;
   width: 100%;
@@ -153,7 +159,7 @@ nav{
   text-decoration: none;
   color: #f1efe3;
 }
-
+*/
 
 @keyframes scroll {
   0% {

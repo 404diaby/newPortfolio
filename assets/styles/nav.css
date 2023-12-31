@@ -3,10 +3,7 @@ nav {
   color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
-  /*position: fixed;*/
   width: 100%;
- /* z-index: 1030;*/
- /* top: 0;*/
  font-family: "montserrat","monospace",sans-serif;
 }
 
@@ -101,10 +98,7 @@ nav {
     #nav #nav__openMenu {
       display: block;
     }
-  /*
-    #nav #nav__mainMenu li a:hover {
-      font-size: 1.6em;
-    }*/
+    
     #nav__mainMenu__icons {
       padding-top: 2em;
     }
