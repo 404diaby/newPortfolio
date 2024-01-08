@@ -1,280 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content=" Personal Portfolio of Diaby Mamadou" />
     <title>Diaby Mamadou - Portfolio</title>
-    <link
-      rel="Website Icon"
-      type="png"
-      href="./assets/image/picture/websiteLogo/logo.png" />
+    <link rel="Website Icon" type="png" href="./assets/image/picture/websiteLogo/logo.png" />
     <link rel="stylesheet" href="./assets/styles/nav.css" />
     <link rel="stylesheet" href="./assets/styles/index.css" />
     <link rel="stylesheet" href="./assets/styles/work.css" />
     <link rel="stylesheet" href="./assets/styles/aboutMe.css" />
     <link rel="stylesheet" href="./assets/styles/generic.css" />
-  </head>
-  <body>
+    <script src="./js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a57cf1d88d.js" crossorigin="anonymous" defer></script>
+    <script src="./js/jquery-3.7.1.min.js" defer></script>
+    <script src="./js/hamburger.js" defer></script>
+</head>
+
+<body>
     <!-------------------- Overlay loading part ------------------------>
     <div class="overlayLoader">
-      <div class="loader loader--style1" title="0">
-        <svg
-          version="1.1"
-          id="loader-1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          width="40px"
-          height="40px"
-          viewBox="0 0 40 40"
-          enable-background="new 0 0 40 40"
-          xml:space="preserve">
-          <path
-            opacity="0.2"
-            fill="#000"
-            d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+        <div class="loader loader--style1" title="0">
+            <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+                <path opacity="0.2" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
               s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
               c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z" />
-          <path
-            fill="#000"
-            d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+                <path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
               C22.32,8.481,24.301,9.057,26.013,10.047z">
-            <animateTransform
-              attributeType="xml"
-              attributeName="transform"
-              type="rotate"
-              from="0 20 20"
-              to="360 20 20"
-              dur="0.5s"
-              repeatCount="indefinite" />
-          </path>
-        </svg>
-      </div>
+                    <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="0.5s" repeatCount="indefinite" />
+                </path>
+            </svg>
+        </div>
     </div>
     <!-------------------- End loading part ------------------------>
     <div id="container">
-      <nav>
-        <div id="nav" class="hidden">
-          <div id="nav__logo">
-            <img src="./assets/image/picture/websiteLogo/logo.png" alt="websiteLogo" />
-          </div>
-          <div id="nav__openMenu"><i class="fa fa-bars"></i></div>
-          <ul id="nav__mainMenu">
-            <li><a class="nav__mainMenu__links" href="#home">Home</a></li>
-            <li><a class="nav__mainMenu__links" href="#work">Work</a></li>
-            <li><a class="nav__mainMenu__links" href="#aboutMe">About</a></li>
-            <div id="nav__mainMenu__closeMenu"><i class="fa fa-times"></i></div>
-            <span id="nav__mainMenu__icons">
-              <a class="nav__mainMenu__icons__link" href="https://www.linkedin.com/in/mamadou-diaby-107351231/?original_referer=" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
-              <a class="nav__mainMenu__icons__link" href="https://github.fr/404diaby" target="_blank"><i class="fa-brands fa-square-github fa-lg"></i></a>
-              <a class="nav__mainMenu__icons__link" href="https://twitter.com/404diaby/" target="_blank"><i class="fa-brands fa-square-x-twitter fa-lg"></i></a>
-            </span>
-          </ul>
-        </div>
-      </nav>
-      <!-------------------- Overlay Lateral part ------------------------>
-      <div id="overlayLateralFollow" class="hidden">
-        <ul>
-          <li>
-            <a href="https://github.com/404diaby" target="_blank"><i class="fa-brands fa-square-github fa-lg"></i></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/mamadou-diaby-107351231/" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/404diaby/" target="_blank"><i class="fa-brands fa-square-x-twitter fa-lg"></i></a>
-          </li>
-        </ul>
-        <div class="vertical-bar"></div>
-        <p>follow me</p>
-      </div>
-      <!-------------------- End overlay part ------------------------>
-      <!-------------------- Home part ------------------------>
-      <section id="home">
-        <div id="home__container" class="hidden" >
-          <span id="home__container__title" >Web Developer</span>
-          <ul  id="home__container__caption" class="desktop">
-            <li>Front-end Developer</li>
-            <li class="point"></li>
-            <li>Software Developer</li>
-          </ul>
-          <p class="mobile">
-            <span class="point"></span>
-            <span>Front-end Developer </span>
-            
-            <span>Software Developer </span>
-          </p>
-          <a id="home__container__link" class="link" href="#aboutMe">about me</a>
-        </div>
-      </section>
-      <section id="work">
-        <div id="work__container">
-            <div id="work__container__contentFirst" class="hidden" >
-                <div>
-                    <span>work</span>
-                    <!--<p> that shows the diversity of my skills</p>!-->
-                    <p>Here you will find the projects carried out with ❤️</p>
-                    
+        <nav>
+            <div id="nav" class="hidden">
+                <div id="nav__logo">
+                    <img src="./assets/image/picture/websiteLogo/logo.png" alt="websiteLogo" />
                 </div>
-                <div>
-                    <a  class="link" href="https://github.com/404diaby" target="_blank">View all</a>
-                </div>    
-                
+                <div id="nav__openMenu"><i class="fa fa-bars"></i></div>
+                <ul id="nav__mainMenu">
+                    <li><a class="nav__mainMenu__links" href="#home">Home</a></li>
+                    <li><a class="nav__mainMenu__links" href="#work">Work</a></li>
+                    <li><a class="nav__mainMenu__links" href="#aboutMe">About</a></li>
+                    <div id="nav__mainMenu__closeMenu"><i class="fa fa-times"></i></div>
+                    <span id="nav__mainMenu__icons">
+                        <a class="nav__mainMenu__icons__link" href="https://www.linkedin.com/in/mamadou-diaby-107351231/?original_referer=" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                        <a class="nav__mainMenu__icons__link" href="https://github.fr/404diaby" target="_blank"><i class="fa-brands fa-square-github fa-lg"></i></a>
+                        <a class="nav__mainMenu__icons__link" href="https://twitter.com/404diaby/" target="_blank"><i class="fa-brands fa-square-x-twitter fa-lg"></i></a>
+                    </span>
+                </ul>
             </div>
-            <div id="work__container__contentSecond" >
-                <section id="work__container__contentSecond__row" >
-                    <article id="work__container__contentSecond__row__item" class="hidden hiddenSpe">
-                        <main>
-                            <span>Faq Accordion</span>
-                            <span>html - css - javascript</span>   
-                        </main>
-                        <aside>
-                            <a href="https://faq-accordion-ecru.vercel.app/" target="_blank" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            <a href="https://github.com/404diaby/faq-accordion" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-                        </aside>
-                        
-                    </article>
-                    <article id="work__container__contentSecond__row__item" class="hidden hiddenSpe">
-                        <main>
-                            <span>Movie Poster</span>
-                            <span>html - css - javascript</span>   
-                        </main>
-                        <aside>
-                            <a href="https://movie-poster-example.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            <a href="https://github.com/404diaby/movie-poster" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-                        </aside>
-                        
-                    </article>
-                    <article id="work__container__contentSecond__row__item" class="hidden hiddenSpe">
-                        <main>
-                            <span>Product Preview Card <!--Component--></span>
-                            <span>html - css</span>   
-                        </main>
-                        <aside>
-                            <a href="https://product-view-card-component-pink.vercel.app/" target="_blank" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            <a href="https://github.com/404diaby/product-view-card-component" target="_blank" ><i class="fa-brands fa-square-github"></i></a>
-                        </aside>
-                    </article>
-                </section>
-                <section id="work__container__contentSecond__row" >
-                    <article id="work__container__contentSecond__row__item" class="hidden hiddenSpe">
-                        <main>
-                            <span>Old Portfolio</span>
-                            <span>html - css - javascript</span>   
-                        </main>
-                        <aside>
-                            <a href="https://diaby-mamadou-old-portfolio.vercel.app/" target="_blank" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            <a href="https://github.com/404diaby/oldportfolio" target="_blank" ><i class="fa-brands fa-square-github"></i></a>
-                        </aside>
-                        
-                    </article>
-                    <article id="work__container__contentSecond__row__item" class="hidden hiddenSpe">
-                        <main>
-                            <span>GSB AppliFrais</span>
-                            <span>php - mysql</span>   
-                        </main>
-                        <aside>
-                            <a href="https://gsbvisite2022.000webhostapp.com/index.php" target="_blank" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            <a href="https://github.com/404diaby/GSBappliFrais" target="_blank" ><i class="fa-brands fa-square-github"></i></a>
-                        </aside>
-                    </article>
-                    <article id="work__container__contentSecond__row__item" class="hidden hiddenSpe">
-
-                        <main>
-                            <span>QR Code Component</span>
-                            <span>html - css</span>   
-                        </main>
-                        <aside>
-                            <a href="https://404diaby.github.io/QR-code-component/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            <a href="https://github.com/404diaby/QR-Code-component" target="_blank" ><i class="fa-brands fa-square-github"></i></a>
-                        </aside>
-                    </article>
-                </section>
-
-                
-                
-            </div>
-        
+        </nav>
+        <!-------------------- Overlay Lateral part ------------------------>
+        <div id="overlayLateralFollow" class="hidden">
+            <ul>
+                <li>
+                    <a href="https://github.com/404diaby" target="_blank"><i class="fa-brands fa-square-github fa-lg"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/mamadou-diaby-107351231/" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/404diaby/" target="_blank"><i class="fa-brands fa-square-x-twitter fa-lg"></i></a>
+                </li>
+            </ul>
+            <div class="vertical-bar"></div>
+            <p>follow me</p>
         </div>
+        <!-------------------- End overlay part ------------------------>
+        <!-------------------- Home part ------------------------>
+        <section id="home">
+            <div id="home__container" class="hidden">
+                <span id="home__container__title">Web Developer</span>
+                <ul id="home__container__caption" class="desktop">
+                    <li>Front-end Developer</li>
+                    <li class="point"></li>
+                    <li>Software Developer</li>
+                </ul>
+                <p class="mobile">
+                    <span class="point"></span>
+                    <span>Front-end Developer </span>
+                    <span>Software Developer </span>
+                </p>
+                <a id="home__container__link" class="link" href="#aboutMe">about me</a>
+            </div>
         </section>
-      <section id="aboutMe">
-        <div id="aboutMe__container">
-          <div id="aboutMe__container__contentFirst" class="hidden hiddenSpe">
-            <div>
-              <span>about me</span>
+        <section id="work">
+            <div id="work__container">
+                <div id="work__container__contentFirst" class="hidden">
+                    <div>
+                        <span>work</span>
+                        <!--<p> that shows the diversity of my skills</p>!-->
+                        <p>Here you will find the projects carried out with ❤️</p>
+                    </div>
+                    <div>
+                        <a class="link" href="https://github.com/404diaby" target="_blank">View all</a>
+                    </div>
+                </div>
+                <div id="work__container__contentSecond">
+                    <section id="work__container__contentSecond__row">
+                        <article id="work__container__contentSecond__row__item" class="hidden hiddenSpe">
+                            <main>
+                                <span>Faq Accordion</span>
+                                <span>html - css - javascript</span>
+                            </main>
+                            <aside>
+                                <a href="https://faq-accordion-ecru.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/404diaby/faq-accordion" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                            </aside>
+                        </article>
+                        <article id="work__container__contentSecond__row__item" class="hidden hiddenSpe">
+                            <main>
+                                <span>Movie Poster</span>
+                                <span>html - css - javascript</span>
+                            </main>
+                            <aside>
+                                <a href="https://movie-poster-example.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/404diaby/movie-poster" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                            </aside>
+                        </article>
+                        <article id="work__container__contentSecond__row__item" class="hidden hiddenSpe">
+                            <main>
+                                <span>Product Preview Card
+                                    <!--Component--></span>
+                                <span>html - css</span>
+                            </main>
+                            <aside>
+                                <a href="https://product-view-card-component-pink.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/404diaby/product-view-card-component" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                            </aside>
+                        </article>
+                    </section>
+                    <section id="work__container__contentSecond__row">
+                        <article id="work__container__contentSecond__row__item" class="hidden hiddenSpe">
+                            <main>
+                                <span>Old Portfolio</span>
+                                <span>html - css - javascript</span>
+                            </main>
+                            <aside>
+                                <a href="https://diaby-mamadou-old-portfolio.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/404diaby/oldportfolio" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                            </aside>
+                        </article>
+                        <article id="work__container__contentSecond__row__item" class="hidden hiddenSpe">
+                            <main>
+                                <span>GSB AppliFrais</span>
+                                <span>php - mysql</span>
+                            </main>
+                            <aside>
+                                <a href="https://gsbvisite2022.000webhostapp.com/index.php" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/404diaby/GSBappliFrais" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                            </aside>
+                        </article>
+                        <article id="work__container__contentSecond__row__item" class="hidden hiddenSpe">
+                            <main>
+                                <span>QR Code Component</span>
+                                <span>html - css</span>
+                            </main>
+                            <aside>
+                                <a href="https://404diaby.github.io/QR-code-component/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/404diaby/QR-Code-component" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                            </aside>
+                        </article>
+                    </section>
+                </div>
             </div>
-            <div>
-              <a class="link" href="../assets/image/pdf/resume/DIABY_Mamadou_CV.pdf" target="_blank">resume</a>
-            </div>
-          </div>
-          <div id="aboutMe__container__contentSecond" class="hidden hiddenSpe">
-            <p
-              >Hi! I'm Mamadou, Holder of a BTS Computer Services to
-              Organizations option: Software Solutions and Business Applications
-              at Lycée Le Castel in Dijon.
-            </p>
-
-            <p>
-              My main experience is in software development but currently, I'm
-              focused on the web development more specificly on front-end
-              development. I have for professional project to continue my
-              studies in the Web dev . I enjoy learning new technologies,
-              continuing to challenge myself and doing interesting things that
-              matter.
-            </p>
-          </div>
-          <div id="aboutMe__container__contentThird" class="hidden">
-            <span id="aboutMe__container__contentThird__title" >Techs and Tools</span>
-          </div>
-          <div id="aboutMe__container__contentFourth ">
-            <div id="aboutMe__container__contentFourth__container">
-              <div id="aboutMe__container__contentFourth__container__item" class="hidden hiddenSpe">
-                <div><img src="../assets/image/picture/toolsLogo/html.png" alt="toolsLogo__html"/></div>
-                <p> HTML</p>
-              </div>
-              <div  id="aboutMe__container__contentFourth__container__item" class="hidden hiddenSpe">
-                <div><img src="../assets/image/picture/toolsLogo/css.png" alt="toolsLogo__css"/></div>
-                <p> CSS</p>
-              </div>
-              <div  id="aboutMe__container__contentFourth__container__item" class="hidden hiddenSpe">
-                <div><img src="../assets/image/picture/toolsLogo/c-sharp.png" alt="toolsLogo__c-sharp"/></div>
-                <p> C#</p>
-              </div>
-              <div  id="aboutMe__container__contentFourth__container__item" class="hidden hiddenSpe">
-                <div><img src="../assets/image/picture/toolsLogo/java.png" alt="toolsLogo__java" /></div>
-                <p> JAVA</p>
-              </div>
-              <div  id="aboutMe__container__contentFourth__container__item" class="hidden hiddenSpe">
-                <div><img src="../assets/image/picture/toolsLogo/php.png" alt="toolsLogo__php" /></div>
-                <p> PHP</p>
-              </div>
-              <div  id="aboutMe__container__contentFourth__container__item" class="hidden hiddenSpe">
-                <div><img src="../assets/image/picture/toolsLogo/javascript.png"alt="toolsLogo__javascript" /></div>
-                <p>JAVASCRIPT </p>
-              </div>
-              <div id="aboutMe__container__contentFourth__container__item" class="hidden hiddenSpe">
-                <div><img src="../assets/image/picture/toolsLogo/mysql.png" alt="toolsLogo__mysql" /></div>
-                <p>MYSQL </p>
-              </div>
-              <div  id="aboutMe__container__contentFourth__container__item" class="hidden hiddenSpe">
-                <div><img src="../assets/image/picture/toolsLogo/git.png" alt="toolsLogo__git" /></div>
-                <p>git </p>
-              </div>
-            </div>
-          </div>
-          <div id="aboutMe__container__contentFifth" class="hidden">
-            <div>
-              <span>join me</span>
-            </div>
-            <!--
+        </section>
+        <section id="aboutMe">
+            <div id="aboutMe__container">
+                <div id="aboutMe__container__contentFirst" class="hidden hiddenSpe">
+                    <div>
+                        <span>about me</span>
+                    </div>
+                    <div>
+                        <a class="link" href="https://flowcv.com/resume/o1wil6ud85" target="_blank">resume</a>
+                    </div>
+                </div>
+                <div id="aboutMe__container__contentSecond" class="hidden hiddenSpe">
+                    <p>Hi! I'm Mamadou, Holder of a BTS Computer Services to
+                        Organizations option: Software Solutions and Business Applications
+                        at Lycée Le Castel in Dijon.
+                    </p>
+                    <p>
+                        My main experience is in software development but currently, I'm
+                        focused on the web development more specificly on front-end
+                        development. I have for professional project to continue my
+                        studies in the Web dev . I enjoy learning new technologies,
+                        continuing to challenge myself and doing interesting things that
+                        matter.
+                    </p>
+                </div>
+                <div id="aboutMe__container__contentThird" class="hidden">
+                    <span id="aboutMe__container__contentThird__title">Techs and Tools</span>
+                </div>
+                <div id="aboutMe__container__contentFourth ">
+                    <div id="aboutMe__container__contentFourth__container">
+                        <div id="aboutMe__container__contentFourth__container__item" class="hidden hiddenSpe">
+                            <div><img src="../assets/image/picture/toolsLogo/html.png" alt="toolsLogo__html" /></div>
+                            <p> HTML</p>
+                        </div>
+                        <div id="aboutMe__container__contentFourth__container__item" class="hidden hiddenSpe">
+                            <div><img src="../assets/image/picture/toolsLogo/css.png" alt="toolsLogo__css" /></div>
+                            <p> CSS</p>
+                        </div>
+                        <div id="aboutMe__container__contentFourth__container__item" class="hidden hiddenSpe">
+                            <div><img src="../assets/image/picture/toolsLogo/c-sharp.png" alt="toolsLogo__c-sharp" /></div>
+                            <p> C#</p>
+                        </div>
+                        <div id="aboutMe__container__contentFourth__container__item" class="hidden hiddenSpe">
+                            <div><img src="../assets/image/picture/toolsLogo/java.png" alt="toolsLogo__java" /></div>
+                            <p> JAVA</p>
+                        </div>
+                        <div id="aboutMe__container__contentFourth__container__item" class="hidden hiddenSpe">
+                            <div><img src="../assets/image/picture/toolsLogo/php.png" alt="toolsLogo__php" /></div>
+                            <p> PHP</p>
+                        </div>
+                        <div id="aboutMe__container__contentFourth__container__item" class="hidden hiddenSpe">
+                            <div><img src="../assets/image/picture/toolsLogo/javascript.png" alt="toolsLogo__javascript" /></div>
+                            <p>JAVASCRIPT </p>
+                        </div>
+                        <div id="aboutMe__container__contentFourth__container__item" class="hidden hiddenSpe">
+                            <div><img src="../assets/image/picture/toolsLogo/mysql.png" alt="toolsLogo__mysql" /></div>
+                            <p>MYSQL </p>
+                        </div>
+                        <div id="aboutMe__container__contentFourth__container__item" class="hidden hiddenSpe">
+                            <div><img src="../assets/image/picture/toolsLogo/git.png" alt="toolsLogo__git" /></div>
+                            <p>git </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="aboutMe__container__contentFifth" class="hidden">
+                    <div>
+                        <span>join me</span>
+                    </div>
+                    <!--
             <div>
               <a class="link" href="https://linktr.ee/404diaby" target="_blank">links</a>        
             </div>
           -->
-          </div>
-          <!-- 
+                </div>
+                <!-- 
           <div id="aboutMe__container__contentSixth">
             <div>dev.mdiaby@gmail.com   dev.contact@diaby-mamadou.com
               <i class="fa-solid fa-envelope"></i><span>diabymamadou3001@gmail.com</span>
@@ -283,68 +251,65 @@
               <i class="fa-solid fa-location-dot"></i><span>Paris, French</span>
             </div>
           </div>-->
-          <div id="aboutMe__container__contentSixth" class="hidden" >
-            <a class="link" href="https://linktr.ee/404diaby" target="_blank">
-            <div class="slider">
-                <div class="slideTrack">
-                  <div class="slide">
-                    <img src="./assets/image/picture/socialMediaLogo/icon/github-icon.svg"  alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="./assets/image/picture/socialMediaLogo/icon/fiverr-icon.svg"  alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="./assets/image/picture/socialMediaLogo/icon/linkedin-icon.svg" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="./assets/image/picture/socialMediaLogo/icon/stackoverflow-icon.svg" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="./assets/image/picture/socialMediaLogo/icon/codepen-icon.svg"  alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="./assets/image/picture/socialMediaLogo/icon/twitter-icon.svg"  alt="" />
-                      </div>
-                  <div class="slide">
-                    <img src="./assets/image/picture/socialMediaLogo/icon/twitch-icon.svg"  alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="./assets/image/picture/socialMediaLogo/icon/instagram-icon.svg" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="./assets/image/picture/socialMediaLogo/icon/behance-icon.svg"  alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="./assets/image/picture/socialMediaLogo/icon/dribbble-icon.svg"  alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="./assets/image/picture/socialMediaLogo/icon/gmail-icon.svg"  alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="./assets/image/picture/socialMediaLogo/icon/zoomus-icon.svg"  alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="./assets/image/picture/socialMediaLogo/icon/slack-icon.svg"  alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="./assets/image/picture/socialMediaLogo/TikTok_logo.svg"  alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="./assets/image/picture/socialMediaLogo/icon/spotify-icon.svg"  alt="" />
-                  </div>
+                <div id="aboutMe__container__contentSixth" class="hidden">
+                    <a class="link" href="https://linktr.ee/404diaby" target="_blank">
+                        <div class="slider">
+                            <div class="slideTrack">
+                                <div class="slide">
+                                    <img src="./assets/image/picture/socialMediaLogo/icon/github-icon.svg" alt="github-icon" />
+                                </div>
+                                <div class="slide">
+                                    <img src="./assets/image/picture/socialMediaLogo/icon/fiverr-icon.svg" alt="fiverr-icon" />
+                                </div>
+                                <div class="slide">
+                                    <img src="./assets/image/picture/socialMediaLogo/icon/linkedin-icon.svg" alt="linkedin-icon" />
+                                </div>
+                                <div class="slide">
+                                    <img src="./assets/image/picture/socialMediaLogo/icon/stackoverflow-icon.svg" alt="stackoverflow-icon" />
+                                </div>
+                                <div class="slide">
+                                    <img src="./assets/image/picture/socialMediaLogo/icon/codepen-icon.svg" alt="codepen-icon" />
+                                </div>
+                                <div class="slide">
+                                    <img src="./assets/image/picture/socialMediaLogo/icon/twitter-icon.svg" alt="twitter-icon" />
+                                </div>
+                                <div class="slide">
+                                    <img src="./assets/image/picture/socialMediaLogo/icon/twitch-icon.svg" alt="twitch-icon.svg" />
+                                </div>
+                                <div class="slide">
+                                    <img src="./assets/image/picture/socialMediaLogo/icon/instagram-icon.svg" alt="instagram-icon" />
+                                </div>
+                                <div class="slide">
+                                    <img src="./assets/image/picture/socialMediaLogo/icon/behance-icon.svg" alt="behance-icon" />
+                                </div>
+                                <div class="slide">
+                                    <img src="./assets/image/picture/socialMediaLogo/icon/dribbble-icon.svg" alt="dribbble-icon" />
+                                </div>
+                                <div class="slide">
+                                    <img src="./assets/image/picture/socialMediaLogo/icon/gmail-icon.svg" alt="gmail-icon" />
+                                </div>
+                                <div class="slide">
+                                    <img src="./assets/image/picture/socialMediaLogo/icon/zoomus-icon.svg" alt="zoomus-icon" />
+                                </div>
+                                <div class="slide">
+                                    <img src="./assets/image/picture/socialMediaLogo/icon/slack-icon.svg" alt="slack-icon" />
+                                </div>
+                                <div class="slide">
+                                    <img src="./assets/image/picture/socialMediaLogo/TikTok_logo.svg" alt="TikTok_logo" />
+                                </div>
+                                <div class="slide">
+                                    <img src="./assets/image/picture/socialMediaLogo/icon/spotify-icon.svg" alt="spotify-icon" />
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-              </div>
-              </a>
-          </div> 
-        </div>
-      </section>  
-      <footer>
-        <div> made with ❤️ by Me © 2023 </div>
-      </footer>
+            </div>
+        </section>
+        <footer>
+            <div> made with ❤️ by Me © 2023 </div>
+        </footer>
     </div>
-    <script src="./js/script.js"></script>
-    <script  src="https://kit.fontawesome.com/a57cf1d88d.js" crossorigin="anonymous"></script>
-    <script src="./js/jquery-3.7.1.min.js"></script>
-    <script src="./js/hamburger.js"></script>
-  </body>
+</body>
+
 </html>
