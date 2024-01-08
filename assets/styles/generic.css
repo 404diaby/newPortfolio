@@ -19,7 +19,7 @@
     flex-direction: column;
     color: #f1efe3;
     font-family: "montserrat", sans-serif; ;
-    background: url(../image/picture/background/protruding-squares.svg) repeat ;
+    background: url(../image/background/protruding-squares.svg) repeat ;
   }
 body::-webkit-scrollbar {
   width: 10px;
