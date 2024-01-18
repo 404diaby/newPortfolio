@@ -46,75 +46,71 @@
 
  
 #work__container__contentSecond{
-    display: flex;
-    flex-direction: column;
+    display: inline-flex;
     width: 100%;
-    justify-content: space-between;
     padding: 10px;
-   
+   flex-wrap: wrap; color: #f1efe3; 
+   justify-content: space-around;
 }
 
 
 
-#work__container__contentSecond  section{
-
-    width: 100%;
-    margin: auto;
-  color: #f1efe3;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  font-family: "montserrat", sans-serif;
-  display:inline-flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-    padding: 10px;
-  }
-
-  #work__container__contentSecond  section  article{
-    max-width: 50%;
-    padding: 1em;
-    display: inline-flex;
+  #work__container__contentSecond    article{
     margin: 10px;
+    max-width: calc(375px - 5%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);transition: transform 0.3s ease-in-out;
+    display: flex;
   }
   
-  #work__container__contentSecond  section  article:hover {
+  #work__container__contentSecond   article:hover {
     transform: scale(1.05);
   border-left: 1px solid rgb(255, 123, 0);
 }
-#work__container__contentSecond  section  article:nth-child(1){
+
+#work__container__contentSecond  article:nth-child(1){
  transition-delay: 400ms;
 }
-#work__container__contentSecond  section  article:nth-child(2){
+#work__container__contentSecond  article:nth-child(2){
   transition-delay: 600ms;
 }
-#work__container__contentSecond  section  article:nth-child(3){
+#work__container__contentSecond  article:nth-child(3){
   transition-delay: 800ms;
 }
-#work__container__contentSecond  section  article main{
+
+#work__container__contentSecond  article:nth-child(4){
+  transition-delay: 400ms;
+ }
+ #work__container__contentSecond  article:nth-child(5){
+   transition-delay: 600ms;
+ }
+ #work__container__contentSecond  article:nth-child(6){
+   transition-delay: 800ms;
+ }
+#work__container__contentSecond  article main{
     display: flex;
     flex-direction: column;
     padding: 1em;
   }
-  #work__container__contentSecond  section  article main span:first-child{
+  #work__container__contentSecond  article main span:first-child{
     font-size: 1.5em;
   }
-  #work__container__contentSecond  section  article main span:last-child{
+  #work__container__contentSecond  article main span:last-child{
     font-size: .7em;
   }
-  #work__container__contentSecond  section  article aside{
+  #work__container__contentSecond  article aside{
     display: flex;
     flex-direction: column;
     padding: 1em;
     font-size: 1.25em;
   }
   
-  #work__container__contentSecond  section article aside a {
+  #work__container__contentSecond article aside a {
      color: rgb(255, 123, 0);
     text-decoration: none;
     /*transition: background-color 0.3s ease-in-out;*/
   }
   
-  #work__container__contentSecond  section article aside a:hover {
+  #work__container__contentSecond article aside a:hover {
    color: #f1efe3;
   }
   
@@ -127,16 +123,19 @@
   */
   
 @media only screen and (max-width: 992px) {
-   
-  }
-  
-  @media only screen and (max-width: 768px) {
-   
     #work__container {
-        width: 90%;
+        width: 70%;
         
       }
     
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #work__container {
+      width: 90%;
+      
+    }
+   
       #work__container__contentFirst {
           display: flex;
           flex-direction: column;
@@ -180,29 +179,7 @@
     padding-left: 0.9em;
   }
 
-  
 
-
-      
-#work__container__contentSecond{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
-   
-}
-
-
-
-#work__container__contentSecond  section{
-
-   
-  display:flex;
-  flex-direction: column;
-  align-items: flex-start;
-  
-  }
- 
 
   
   
@@ -214,13 +191,27 @@
       font-size: 2em;
      
     }
-    #work__container__contentSecond  section  article:nth-child(odd) {
+    #work__container__contentSecond  article{
+      
+    margin: 10px; padding: 1em;
+    flex-direction: column;
+    }
+    
+    #work__container__contentSecond  article:nth-child(odd) {
      
     border-left: 1px solid rgb(255, 123, 0);
   }
-  #work__container__contentSecond  section  article:nth-child(even) {
+  #work__container__contentSecond   article:nth-child(even) {
      
     border-left: 1px solid #f1efe3;
+  }
+  #work__container__contentSecond   article aside{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    
+    padding: 1em;
+    font-size: 1.25em;
   }
     
   }

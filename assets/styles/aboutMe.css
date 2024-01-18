@@ -35,7 +35,8 @@ nav{
 #aboutMe__container__contentFirst div span {
   line-height: 1;
   text-transform: uppercase;
-  font-size: 3em;letter-spacing: 4px;
+  font-size: 3em;
+  letter-spacing: 4px;
 }
 
 #aboutMe__container__contentSecond {
@@ -69,9 +70,10 @@ nav{
 
 
 #aboutMe__container__contentFourth__container {
-  width: 70%;
+  width: 90%;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap ;
+  justify-content: space-around;
   column-gap: 10px;
   padding-left: 1em;
   row-gap: 10px;
@@ -92,6 +94,7 @@ nav{
 }
 #aboutMe__container__contentFourth__container div div img {
   width: 100%;
+ object-fit: contain;
 }
 #aboutMe__container__contentFourth__container div p {
   padding: 10px;
@@ -107,93 +110,22 @@ nav{
 }
 
 #aboutMe__container__contentFifth {
+  margin-top: 3em;
   display: inline-flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10px;
-}
-
-#aboutMe__container__contentFifth div span{
-  line-height: 1;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.5em;
 }
 
-#aboutMe__container__contentFifth div p{
-  font-weight: 300;
-  font-size: 1em;
-  padding-left: 0.9em;
-}
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-250px * 7));
-  }
+#aboutMe__container__contentFifth  span a{
+ text-transform:lowercase;
+ font-weight: 500;
+ font-size: 1em;
 }
-
-.slider {
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 100px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  user-select: none;
-  cursor: pointer;
-}
-
-.slider::before,
-.slider::after {
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  content: "";
-  height: 100px;
-  position: absolute;
-  width: 100px;
-  z-index: 2;
-}
-
-.slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-
-.slider::before {
-  left: 0;
-  top: 0;
-}
-
-.slideTrack {
-  animation: scroll 40s linear infinite;
-  display: flex;
-  width: calc(250px * 14);
-}
-
-.slide {
-  height: 100px;
-  width: 250px;
-  background-color: #f1efe3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
-}
-
-.slide img {
-  height: calc(100px - 30%);
-  width: calc(250px - 20%);
-  background-color: #f1efe3;
-  object-fit: contain;
-}
-
 
 
 
@@ -207,8 +139,10 @@ nav{
 
   */
 @media only screen and (max-width: 992px) {
- 
-
+  #aboutMe__container{
+    
+  width: 70%;
+  }
 #aboutMe__container__contentFourth__container {
  
   column-gap: 20px;
@@ -217,9 +151,6 @@ nav{
   width: 100%;
 }
 
-#aboutMe__container__contentFourth__container div {
-  width:auto ;
-}
 
 #aboutMe__container__contentFourth__container div div {
   width: 50%;
@@ -258,7 +189,9 @@ nav{
   margin-left: 0;
   font-size: 1.25em;
 }
-
+#aboutMe__container__contentFourth__container div {
+  width: auto  ;
+}
 
 #aboutMe__container__contentThird {
   text-align: center;
@@ -277,11 +210,12 @@ nav{
 }
 
 #aboutMe__container__contentFifth {
-  display: flex;
+ display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
   text-align: center;
+
 }
 
 

@@ -12,7 +12,7 @@ window.addEventListener("load", () => {
 const observer = new IntersectionObserver((entries) => {
 
   entries.forEach((entry) => {
-    console.log(entry)
+    //console.log(entry)
     if(entry.isIntersecting){
       if(entry.target.id == "overlayLateralFollow"){
         entry.target.classList.add('bounce-in-top');
@@ -31,7 +31,7 @@ const observer = new IntersectionObserver((entries) => {
         entry.target.classList.add("tracking-in-expand-fwd-top");
         entry.target.children[1].children[0].classList.add('pulsate-fwd');
       }
-      if(entry.target.id == "work__container__contentSecond__row__item"){
+      if(entry.target.id == "work__container__contentSecond__item"){
         entry.target.classList.add("show");
       }
       if(entry.target.id == "aboutMe__container__contentFirst"){
@@ -47,19 +47,24 @@ const observer = new IntersectionObserver((entries) => {
       if(entry.target.id == "aboutMe__container__contentFourth__container__item"){
         entry.target.classList.add("show");
       }
+
       if(entry.target.id == "aboutMe__container__contentFifth"){
-        entry.target.classList.add("tracking-in-expand-fwd-top");
+       
+       entry.target.classList.add("tracking-in-expand-fwd-bottom");
         setTimeout(() =>{
-          console.log(entry.target.children[1].children[0]);
+          entry.target.children[0].classList.add('pulsate-fwd');
         },800)
+       
       }
+
+/*
       if(entry.target.id == "aboutMe__container__contentSixth"){
         entry.target.classList.add("tracking-in-expand-fwd-bottom");
         
         setTimeout(() =>{
-          console.log(entry.target.children[0].children[0].classList.add("shake-horizontal"));
+          //console.log(entry.target.children[0].children[0].classList.add("shake-horizontal"));
         },800)
-      }
+      }*/
       
       
     }
@@ -68,3 +73,26 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+/*
+
+
+
+ <div class="slide">
+                                    <img src="./assets/image/socialMediaLogo/icon/behance-icon.svg" alt="behance-icon" />
+                                </div>
+
+
+  <div class="slide">
+                                    <img src="./assets/image/socialMediaLogo/icon/spotify-icon.svg" alt="spotify-icon" />
+                                </div>
+ <div class="slide">
+                                    <img src="./assets/image/socialMediaLogo/icon/dribbble-icon.svg" alt="dribbble-icon" />
+                                </div>
+
+                                 <div class="slide">
+                                    <img src="./assets/image/socialMediaLogo/icon/stackoverflow-icon.svg" alt="stackoverflow-icon" />
+                                </div>
+  <div class="slide">
+                                    <img src="./assets/image/socialMediaLogo/icon/zoomus-icon.svg" alt="zoomus-icon" />
+                                </div>
+*/
