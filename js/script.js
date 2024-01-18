@@ -9,6 +9,10 @@ window.addEventListener("load", () => {
 });
 
 
+
+
+
+
 const observer = new IntersectionObserver((entries) => {
 
   entries.forEach((entry) => {
@@ -33,6 +37,17 @@ const observer = new IntersectionObserver((entries) => {
       }
       if(entry.target.id == "work__container__contentSecond__item"){
         entry.target.classList.add("show");
+        const articles = document.querySelectorAll('#work__container__contentSecond article');
+        articles[0].style.transitionDelay = '400ms'
+        articles[1].style.transitionDelay = '600ms'
+        articles[2].style.transitionDelay = '800ms'
+        articles[3].style.transitionDelay = '400ms'
+        articles[4].style.transitionDelay = '600ms'
+        articles[5].style.transitionDelay = '800ms'
+        setTimeout(()=>{
+          articles.forEach(article => {
+            article.style.transitionDelay = '0ms'
+        }, 1000)});
       }
       if(entry.target.id == "aboutMe__container__contentFirst"){
         entry.target.classList.add("show");
