@@ -8,19 +8,21 @@ closeMenu.addEventListener("click", close);
 
 // close menu when you click on a menu item
 menu_items.forEach((item) => {
-  item.addEventListener("click", function () {
-    close();
-  });
+  item.addEventListener("click", ()=>{
+    close()
+  }) 
+    
 });
 
 function show() {
   mainMenu.style.display = "flex";
-  mainMenu.style.top = "0";
+ mainMenu.style.top = "0";
 }
 function close() {
-  mainMenu.style.top = "-100%";
-  setTimeout(()=>{
+ mainMenu.style.top = "-100%";
+  //mainMenu.style.display = "none";
+  /*setTimeout(()=>{
      mainMenu.style.display = "none";
-  },1000);
+  },1000);*/
  
 }
