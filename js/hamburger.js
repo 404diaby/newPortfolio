@@ -6,23 +6,24 @@ const menu_items = document.querySelectorAll("nav__mainMenu__links");
 openMenu.addEventListener("click", show);
 closeMenu.addEventListener("click", close);
 
+
+
+mainMenu.style.top = `-${screen.height}px`;
 // close menu when you click on a menu item
 menu_items.forEach((item) => {
   item.addEventListener("click", ()=>{
-    close()
+    close();
   }) 
     
 });
 
 function show() {
   mainMenu.style.display = "flex";
- mainMenu.style.top = "0";
+  mainMenu.style.transition = "top 1s ease";
+ mainMenu.style.top = "0px";
 }
 function close() {
- mainMenu.style.top = "-100%";
-  //mainMenu.style.display = "none";
-  /*setTimeout(()=>{
-     mainMenu.style.display = "none";
-  },1000);*/
  
+ mainMenu.style.top = `-${screen.height}px`;
+
 }

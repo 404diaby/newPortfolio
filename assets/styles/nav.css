@@ -7,7 +7,7 @@ nav {
  font-family: "montserrat","monospace",sans-serif;
 
  position: fixed;
- top: 0;
+ /*top: 0;*/
 }
 
 #nav {
@@ -81,7 +81,7 @@ nav {
     #nav__mainMenu {
       height: 100vh;
       position:fixed;
-   top : 0px;
+ /*  top : -500px;*/
       right: 0px;
       left: 0px;
       z-index: 999;
@@ -89,8 +89,8 @@ nav {
       align-items: center;
       justify-content: center;
       background: #1e3266;
-      transition: top 1s ease;
-      display: none;
+      /*transition: top 1s ease;*/
+      /*display: none;*/
     }
 
     #nav__mainMenu__closeMenu {
