@@ -1,5 +1,5 @@
 //******** Loading */
-const loader = document.querySelector(".overlayLoader");
+/*const loader = document.querySelector(".overlayLoader");
 
 window.addEventListener("load", () => {
   loader.classList.add("fondu-out");
@@ -7,7 +7,21 @@ window.addEventListener("load", () => {
     loader.style.display = "none";
   }, 500);
 });
+*/
+document.addEventListener("DOMContentLoaded", function() {
+  // Masquer le loader et afficher le contenu une fois le DOM chargé
+  const overlayLoader = document.getElementById("overlayLoader");
+  const body = document.body;
 
+  setTimeout(() => {
+  // Ajouter la classe "loaded" au body
+  body.classList.add("loaded");
+  // Masquer le loader
+  overlayLoader.style.display = "none";
+  }, 3000);
+
+  
+});
 
 
 
