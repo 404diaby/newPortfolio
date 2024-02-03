@@ -167,15 +167,24 @@ footer {
     transition: all 1s;
     
   }
-  .hiddenSpe{
-    transform: translateX(-100%);
-    filter: blur(5px);
-  }
   .show{
-    opacity: 1;
+    animation: translat .5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  }
+  
+ @keyframes translat {
+  from {
+    filter: blur(5px);
+    transform: translateX(-100%);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  to {
     filter: blur(0);
     transform: translateX(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
   }
+}
 
   /** Animation **/
 
