@@ -1,13 +1,5 @@
 //******** Loading */
-/*const loader = document.querySelector(".overlayLoader");
 
-window.addEventListener("load", () => {
-  loader.classList.add("fondu-out");
-  setTimeout(() => {
-    loader.style.display = "none";
-  }, 500);
-});
-*/
 document.addEventListener("DOMContentLoaded", function() {
   // Masquer le loader et afficher le contenu une fois le DOM chargé
   const overlayLoader = document.getElementById("overlayLoader");
@@ -24,13 +16,18 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+// Masquer le loader et afficher le contenu une fois le DOM chargé
+const overlayLoader = document.getElementById("overlayLoader");
+const body = document.body;
+
+body.classList.add("loaded");
+overlayLoader.style.display = "none";
 
 
 
 const observer = new IntersectionObserver((entries) => {
 
   entries.forEach((entry) => {
-    //console.log(entry)
     if(entry.isIntersecting){
       if(entry.target.id == "overlayLateralFollow"){
         entry.target.classList.add('bounce-in-top');
@@ -45,18 +42,13 @@ const observer = new IntersectionObserver((entries) => {
           entry.target.children[3].classList.add('pulsate-fwd');
         },800)
       }
-      if(entry.target.id == "work__container__contentFirst"){
+      if(entry.target.id == "workContainerTitle"){
         entry.target.classList.add("tracking-in-expand-fwd-top");
         entry.target.children[1].children[0].classList.add('pulsate-fwd');
       }
-      if(entry.target.id == "work__container__contentSecond__item"){
+      if(entry.target.id == "workContainerContent"){
        
        entry.target.classList.add('show');
-       setTimeout(()=>{
-        entry.target.classList.remove('show');
-        entry.target.classList.remove('hidden');
-       }, 1501)
-        
         
       }
       if(entry.target.id == "aboutMe__container__contentFirst"){
@@ -81,16 +73,7 @@ const observer = new IntersectionObserver((entries) => {
         },800)
        
       }
-
-/*
-      if(entry.target.id == "aboutMe__container__contentSixth"){
-        entry.target.classList.add("tracking-in-expand-fwd-bottom");
-        
-        setTimeout(() =>{
-          //console.log(entry.target.children[0].children[0].classList.add("shake-horizontal"));
-        },800)
-      }*/
-      
+     
       
     }
   });
@@ -98,26 +81,3 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
-/*
-
-
-
- <div class="slide">
-                                    <img src="./assets/image/socialMediaLogo/icon/behance-icon.svg" alt="behance-icon" />
-                                </div>
-
-
-  <div class="slide">
-                                    <img src="./assets/image/socialMediaLogo/icon/spotify-icon.svg" alt="spotify-icon" />
-                                </div>
- <div class="slide">
-                                    <img src="./assets/image/socialMediaLogo/icon/dribbble-icon.svg" alt="dribbble-icon" />
-                                </div>
-
-                                 <div class="slide">
-                                    <img src="./assets/image/socialMediaLogo/icon/stackoverflow-icon.svg" alt="stackoverflow-icon" />
-                                </div>
-  <div class="slide">
-                                    <img src="./assets/image/socialMediaLogo/icon/zoomus-icon.svg" alt="zoomus-icon" />
-                                </div>
-*/

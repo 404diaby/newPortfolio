@@ -1,0 +1,141 @@
+#main { 
+    flex: 1;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+  }
+  .projet-content, .carousel-container{
+    width:60% ;
+   display: flex;
+   gap:35px;
+   padding: 1em;
+   background-image: radial-gradient(circle, rgb(22, 20, 20) 5%, transparent 10%),
+      radial-gradient(circle, rgb(22, 20, 20) 5%, transparent 10%);
+    background-size: 15px 15px;
+  
+  }
+  .projet-content-body{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .links{
+    display: flex;
+    gap: 55px;
+  }
+  .link{ /* overwrite classe link generic */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+  }
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel {
+    position: relative;
+     width: 100%;
+    /* max-width: 600px; */
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;    
+    
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+.carousel-item img.fit{
+    width: auto;
+  max-height: 530px;
+}
+
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+   /*  color: white; */
+    border: none;
+    border-radius: 100%;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+
+
+  
+/*
+  Média query
+  max-width: 992 = laptop
+  max-width: 768 = tablette
+  max-width: 600 = mobile
+
+  */
+  
+@media only screen and (max-width: 1024px) {
+    .projet-content, .carousel-container{
+        width:80% ;
+    }
+
+
+}
+
+  
+  @media only screen and (max-width: 600px) {
+    .projet-content, .carousel-container{
+        width:99% ;
+    }
+   .projet-content{
+    flex-direction: column;
+   }
+    iframe{
+        height: 315px; 
+        width: 560px;
+    }
+
+    
+.carousel-control {
+
+    font-size: 1em;
+  
+    padding: 7px;
+}
+  }
+  @media only screen and (max-width: 600px) {
+   .links{
+    flex-direction: column;
+    gap: 10px;
+   }
+   
+  }

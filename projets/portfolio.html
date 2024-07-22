@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content=" Personal Portfolio of Diaby Mamadou" />
+    <title>Diaby Mamadou - Portfolio</title>
+    <link rel="Website Icon" type="png" href="../assets/image/websiteLogo/logo.png" />
+    <link rel="stylesheet" href="../assets/styles/nav.css" />
+    <link rel="stylesheet" href="../assets/styles/generic.css" />
+    <link rel="stylesheet" href="./projets.css">
+    <script src="../js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a57cf1d88d.js" crossorigin="anonymous" defer></script>
+    <script src="../js/jquery-3.7.1.min.js" defer></script>
+    <script src="../js/hamburger.js" defer></script>
+    <script src="../js/carousel.js" defer></script>
+
+    
+
+</head>
+
+<body>
+    <!-------------------- Overlay loading part ------------------------>
+    
+  <div class="overlayLoader" id="overlayLoader">
+    <div class="loader"></div>
+  </div>
+
+    <!-------------------- End loading part ------------------------>
+    <div id="container">
+        <!-- Menu  -->
+        <nav>
+            <div id="nav" class="hidden">
+                <div id="nav__logo">
+                    <img src="../assets/image/websiteLogo/logo.png" alt="websiteLogo" />
+                </div>
+                <div id="nav__openMenu"><i class="fa fa-bars"></i></div>
+                <ul id="nav__mainMenu">
+                    <li><a class="nav__mainMenu__links" href="../index.html">Home</a></li>
+                    <li><a class="nav__mainMenu__links" href="../index.html#work">Work</a></li>
+                    <li><a class="nav__mainMenu__links" href="../index.html#aboutMe">About</a></li>
+                    <div id="nav__mainMenu__closeMenu"><i class="fa fa-times"></i></div>
+                    <span id="nav__mainMenu__icons">
+                        <a class="nav__mainMenu__icons__link" href="https://www.linkedin.com/in/mamadou-diaby-107351231/?original_referer=" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                        <a class="nav__mainMenu__icons__link" href="https://github.fr/404diaby" target="_blank"><i class="fa-brands fa-square-github fa-lg"></i></a>
+                        <a class="nav__mainMenu__icons__link" href="https://twitter.com/404diaby/" target="_blank"><i class="fa-brands fa-square-x-twitter fa-lg"></i></a>
+                    </span>
+                </ul>
+            </div>
+        </nav>
+        <!-- Body -->
+       
+      <div id="main" >
+        <section class="projet-content">
+            <div class="projet-content-title">
+                <h1>Portfolio</h1>
+            </div>
+
+<div class="projet-content-body">
+    <p> <strong> Description :</strong>   <span>Mon premier portfolio fait à l'ocassion de l'épreuve E4 du BTS SIO option SLAM ( promotion 2023 )</span></p>
+ 
+    <p><strong>Tech :</strong>   <span>html - css -js - jquery - isotope - flickity -smooth-scroll - Git/Github </span>  </p>
+    
+    <div class="links" >        
+        <a class="link" href="https://diaby-mamadou-old-portfolio.vercel.app/" target="_blank">Visite l'app<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <a class="link" href="https://github.com/404diaby/oldportfolio" target="_blank">Code source<i class="fa-brands fa-square-github"></i></a>
+    </div>
+</div> 
+
+
+
+        </section>
+        <section class="carousel-container">
+            <div class="carousel">
+
+          
+            
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/image/projets/portfolio/heroPage.png" alt="1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/image/projets/portfolio/parcoursPage.png" alt="2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/image/projets/portfolio/competencePage.png" alt="3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/image/projets/portfolio/projetPage.png" alt="4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/image/projets/portfolio/veillePage.png" alt="5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/image/projets/portfolio/contactPage.png" alt="6">
+                    </div>
+                </div>
+                <button class="carousel-control prev link" onclick="prevSlide()"><i class="fa-solid fa-arrow-left"></i><!-- &#10094; --></button>
+                <button class="carousel-control next link" onclick="nextSlide()"><i class="fa-solid fa-arrow-right"></i><!-- &#10095; --></button>
+              </div>
+          
+        </section>
+      </div>
+        
+       
+        <footer>
+            <div> made with ❤️ by Me © 2023 </div>
+        </footer>
+    </div>
+    
+   
+    
+</body>
+
+</html>
