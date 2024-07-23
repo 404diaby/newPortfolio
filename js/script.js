@@ -16,14 +16,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// Masquer le loader et afficher le contenu une fois le DOM chargé
-const overlayLoader = document.getElementById("overlayLoader");
-const body = document.body;
-
-body.classList.add("loaded");
-overlayLoader.style.display = "none";
-
-
 
 const observer = new IntersectionObserver((entries) => {
 
